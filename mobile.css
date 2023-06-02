@@ -1,0 +1,491 @@
+*{
+    box-sizing: border-box;
+
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+body{
+    margin: 0;
+}
+
+/* navbar start from here */
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: #0c6168;
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.nav-logo img{
+    width: 80px;
+    height: 90px;
+}
+
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+
+.navbar::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+
+
+
+.nav-heading h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+
+}
+
+
+.navbar-menu a{
+    text-decoration: none;
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+
+
+
+.navbar-menu a:hover{
+    background-color: gray;
+}
+
+
+/* navbar end here */
+/* profile design starts from here */
+
+.profile{
+    text-align: center;
+    position: relative;
+    padding: 130px 10px;
+    background-color: black;
+    color: white;
+}
+
+.profile .bottom{
+    width: 150px;
+    transition: transform 2s;
+
+
+}
+
+
+
+
+
+.profile .top{
+    position: absolute;
+    width: 120px;
+    left: 530px;
+    top: 180px;
+    transition: transform 2s;
+   
+}
+
+
+
+.profile .top:hover{
+   
+   
+    transform: rotate(360deg);
+   
+}
+
+
+.profile .bottom:hover{
+   
+    width: 150px;
+    
+    transform: rotate(360deg);
+    animation-name: sun;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+   
+}
+
+
+@keyframes sun {
+    from{
+        width: 150px;
+        
+
+    }
+    
+    to{
+        width: 350px;
+        
+    }
+}
+
+
+.profile-description p{
+    text-align: center;
+}
+
+/* 
+aboutme section start here */
+
+
+h2{
+    font-size: 1.5rem;
+    text-align: center; 
+}
+
+
+.about-me{
+    background-color: coral;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    
+}
+
+.about-me::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+
+.aboutME-image img{
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: 1s ease-in-out;
+    
+}
+
+
+.aboutME-image img:hover{
+    width: 270px;
+    box-shadow: 2px 3px 30px aquamarine;
+}
+
+
+.dotted{
+    border: dotted 6px white;
+}
+
+/* about me ends here */
+
+
+
+
+
+
+
+
+
+
+/* profile design ends here */
+
+
+
+/* social design start  */
+
+.social .btn{
+    font-size: 5rem;
+    
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+   align-items: center;
+    margin: 15px ;
+    bottom: 20px;
+  
+    
+    
+    
+
+}
+
+
+.social #facebook{
+    color: #3b5998;
+    
+   
+    
+}
+
+
+
+.social #whatssapp{
+    color:#075e54;
+    
+    
+}
+    
+
+.social #linkdin{
+    color: #0077b5;
+}
+
+.social #facebook p{
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+.social #facebook:hover{
+    background-color: #3b5998;
+    font-size: 5.5rem;
+    transition: 0.6s ease-in;
+    color: white;
+
+}
+
+
+
+.social #whatssapp:hover{
+    background-color: #075e54;;
+    font-size: 5.5rem;
+    transition: 0.6s ease-in;
+    color: white;
+
+}
+
+
+
+
+.social #linkdin:hover{
+    background-color: #0077b5;
+    font-size: 5.5rem;
+    transition: 0.6s ease-in;
+    color: white;
+}
+
+
+
+/* social design ends */
+
+
+
+/* card section start */
+
+
+.education{
+    background-color: #9d9d9d;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+    
+    
+}
+
+
+.education:hover{
+    box-shadow: rgb(160, 110, 247) 3px 3px 30px ;
+
+}
+
+.education img{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 30%;
+    padding: 10px;
+
+}
+
+
+.education h1{
+    background-color: bisque;
+    border-radius: 20px;
+}
+
+
+.education h1:hover{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+    
+
+.place1:hover{
+    font-size: 1.3rem;
+    background-color: cadetblue;
+    transition: 1s;
+    border-radius: 30px;
+}
+
+.education::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+
+
+.skills ul li{
+    list-style: none;
+    margin: 50px 0px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center;
+    bottom: 10px;
+
+}
+
+.skills ul li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    background-color: aliceblue;
+    width: 100%;
+    height: 25px;
+    left: 0px;
+    border-radius: 1000px;
+    left: 0px;
+
+
+}
+
+
+
+
+
+
+.skills ul li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    background-color: rgb(30, 114, 186);
+    width: 0%;
+    height: 25px;
+    left: 0px;
+    border-radius: 1000px;
+    left: 0px;
+
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+    animation-direction: forwards;
+
+
+    
+
+
+}
+
+.skills ul li.html::after{
+    animation-name: html;
+}
+
+@keyframes html {
+    to{
+        width: 100%;
+    }
+    
+}
+
+
+.skills ul li.css::after{
+    animation-name: css;
+}
+
+@keyframes css {
+    to{
+        width: 95%;
+        background-color: blueviolet;
+    }
+    
+}
+
+.skills ul li.bt::after{
+    animation-name: boots;
+}
+@keyframes boots {
+    to{
+        width: 90%;
+        background-color: yellowgreen;
+    }
+    
+}
+
+
+
+.skills ul li.js::after{
+    animation-name: js;
+}
+@keyframes js {
+    to{
+        width: 80%;
+        background-color: rgb(228, 0, 213);
+    }
+    
+}
+
+
+
+
+.skills ul li.react::after{
+    animation-name: react;
+}
+@keyframes react {
+    to{
+        width: 80%;
+        background-color: rgb(37, 198, 248);
+    }
+    
+}
+
+
+
+
+
+.cardSection .education{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+/* card section ends */
